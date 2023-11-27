@@ -1,18 +1,27 @@
 body{
   background-color: lightseagreen;
   font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  flex-wrap: wrap;
 }
 h1{
   color: darkslateblue;
   text-align: center;
+  width: 100%;
+  display: block;
 }
 .assign{
   background-color: coral;
   margin: 10px;
   padding: 10px;
   display:flex;
-  
+  width: 20%;
+  box-shadow: 8px 8px red;
+  display: block; /* instead of flex */
+  border-radius: 20px; /* set last assignment */
 }
+
+
 .assign img{
   width: 200px;
   padding: 10px;
