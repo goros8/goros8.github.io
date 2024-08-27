@@ -1,0 +1,7 @@
+#mainNav a{
+    text-decoration: none;
+}
+#mainNav li{
+    list-style-type: none;
+    display: inline-block;
+}
