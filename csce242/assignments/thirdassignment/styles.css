@@ -2,9 +2,27 @@ body {
     background-color: rgba(255, 255, 255, 0.8);
     font-family: Arial, Helvetica, sans-serif;
 }
-
+#copyRight{
+    text-align: center;
+}
+#secondSection img {
+    display: block;
+    margin: 0 auto;
+    padding-top: 10px;
+}
 li {
     list-style: none;
+}
+p{
+    text-align: left;
+}
+section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding:10px;
 }
 
 #main-div {
@@ -13,32 +31,51 @@ li {
     padding: 10px;
     margin: auto;
 }
+
 #side{
     background-color: salmon;
     text-align: left;
-    color:rgb(209, 232, 253);
+    color: rgb(209, 232, 253);
+}
+#side a{
+    color: aliceblue;
+}
+#side h3{
+    padding-left: 40px;
+    color: aliceblue;
+
+}
+#side li{
     text-decoration: underline;
 }
 header {
     text-align: center;
 }
 
-#sidebar {
-    text-decoration: underline;
+
+#secondSection{
+    padding-left: 100px;
+    padding-right: 100px;
+    background-color: rgb(166, 216, 200);
+    padding: 10px;
+
 }
 
 nav a {
     text-decoration: none;
-    padding: 5px;
-    background: black;
-    color: violet;
+    border: 2px solid orange;
+    padding-left: 0px;
+    background: rgb(47, 145, 42);
+    color: rgb(254, 201, 254);
     display: block;
+    width: 100%;
+    text-align: center;
+    font-size: 16px;
 }
 
 @media only screen and (min-width: 600px) {
     .columns {
-        display:flex;
-        
+        display: flex;
     }
 
     .one {
@@ -48,8 +85,17 @@ nav a {
     .two {
         flex: 2;
     }
-    .five{
-        flex:5;
+
+    .five {
+        flex: 5;
+    }
+    .eight{
+            flex: 8;
+            justify-content: center;
+            display: flex;
+            flex-direction: column;
+            padding:10px;
+
     }
 
     nav ul {
@@ -65,7 +111,4 @@ nav a {
         flex: 1;
     }
 
-    aside {
-        text-align: right;
-    }
 }
