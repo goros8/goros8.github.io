@@ -1,0 +1,65 @@
+/*structure*/
+body{
+    background:url("images/groot.jpg");
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+#content{
+    width:70%;
+    margin:auto;
+    background: rgb(255,255,255,0.5);
+    border-radius:5px;
+}
+#main_header{
+background-color: skyblue;
+}
+
+section{
+    background-color: lightgrey;
+}
+aside{
+    background-color:aqua;
+}
+img{
+    max-width: 100%;
+}
+/*nav*/
+#main_nav ul{
+    padding-left: 0;
+}
+#main_nav li{
+    list-style:none;
+    border-bottom: 1px solid violet;
+}
+#main_nav a{
+    text-decoration: none;
+    display:block;
+
+}
+/*typo*/
+#main_footer p{
+    text-align: right;
+    text-shadow: 1px;
+}
+
+/*media queries*/
+/*applys to 600 pixels and larger*/
+
+@media only screen and (min-width:600px){
+    .columns{
+        display:flex;
+
+    }
+    .one{
+        flex: 1;
+    }
+    .two{
+        flex:2;
+    }
+    #main_nav li{
+        flex:1;
+    }
+}
+@media only screen and (min-width:768px){
+    
+}
