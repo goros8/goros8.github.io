@@ -21,7 +21,7 @@
 
 #main-nav header ul li {
     display: inline;
-    font-weight: bold; /* 'bold' should be applied through font-weight */
+    font-weight: bold; 
     color: white;
     padding: 5px;
 }
