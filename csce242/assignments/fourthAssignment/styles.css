@@ -1,0 +1,80 @@
+/*main nav*/
+#main-nav{
+    width: 100%;
+    background-color: black;
+    height: 50px;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+#main-nav header{
+    display: none;
+    position: absolute;
+    top: -10px;
+    right: 5px;
+}
+
+#main-nav header ul{
+    padding-top: 2px;
+}
+
+#main-nav header ul li {
+    display: inline;
+    font-weight: bold; /* 'bold' should be applied through font-weight */
+    color: white;
+    padding: 5px;
+}
+
+#main-nav header ul li a{
+    text-decoration: none;
+    color: white;
+    font-weight: none;
+}
+
+#main-logo{
+    position: absolute;
+    padding-left: 10px;
+    height: 40px;
+}
+#search-box {
+    display: flex;
+    align-items: center;
+    position:absolute;
+    right:5%;
+}
+
+#search-box input {
+    padding: 10px;
+    border: 1px solid #ffffff;
+    color: white;
+    background-color: black;
+    font-weight: bold;
+}
+#search-box input::placeholder {
+    color: white;
+    font-weight: bold;
+}
+#nav-menu{
+    display: inline;
+}
+
+#nav-menu li{
+    text-decoration: none;
+    color:white;
+    font-weight: bold;
+}
+
+@media only screen and (min-width: 960px) {
+    #main-nav{
+        height: 150px;
+    }
+
+    #main-nav header{
+        display: block;
+    }
+
+    #main-logo {
+        height: 60px; /* Example adjustment for larger screens */
+    }
+}
