@@ -1,0 +1,411 @@
+body {
+    font-family: sans-serif;
+    margin: 0; /* Remove default body margin */
+    padding: 0; /* Remove default body padding */
+}
+/* Main nav */
+#main-nav {
+    width: 100%;
+    background-color: black;
+    height: 40px;
+    position: fixed; /* Stay at the top even when scrolling */
+    top: 0; /* Touches the top of the screen */
+    left: 0; /* Touches the left side */
+    right: 0; /* Touches the right side */
+    display: flex;
+    align-items: center;
+    z-index: 9999; /* High z-index to ensure it stays on top */
+
+}
+
+#main-nav header {
+    display: none;
+    position: absolute;
+    top: -10px;
+    right: 5px;
+}
+
+#main-nav header ul{
+    padding-top: 2px;
+    position:static;
+    background-color: black;
+}
+
+#main-nav header ul li {
+    display: inline;
+    font-weight: bold; 
+    color: white;
+    padding: 5px;
+}
+
+#main-nav header ul li a{
+    text-decoration: none;
+    color: white;
+    font-weight: none;
+
+}
+
+#main-logo {
+    position: absolute;
+    padding-left: 10px;
+    height: 40px;
+}
+
+#search-box {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    right: 5%;
+}
+
+#search-box input {
+    padding: 10px;
+    border: 1px solid #ffffff;
+    color: white;
+    background-color: black;
+    font-weight: bold;
+}
+
+#search-box input::placeholder {
+    color: white;
+    font-weight: bold;
+}
+
+
+
+/* NAV MENU */
+
+#nav-menu {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    background-color: #73000a;
+    padding: 10px;
+    position: relative; /* Adjust to fit within the document flow */
+    margin-top: 50px; /* Adjust based on the height of the main-nav */
+    width: 100%; /* Ensure it spans the full width */
+}
+
+#nav-menu li {
+    margin: 0 10px; /* Adjust spacing between menu items */
+}
+
+#nav-menu li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+#main-image {
+    margin-top: 0; /* Ensure it is below the nav menu */
+    padding: 0;
+    position: relative; /* Changed from absolute to relative */
+}
+
+#main-image img {
+    height: 500px;
+    width: 100%;
+    display: block; /* Ensures the image is not treated as inline and removes extra space below */
+}
+
+/* Graduate heading */
+#grad-heading {
+    position: relative; /* Changed from absolute to relative */
+    margin: 0; /* Reset any margin */
+    padding: 20px; /* Add padding if necessary */
+    text-align: left; /* Center the heading text */
+    background-color: #ffffff; /* Ensure background color is applied */
+}
+
+#grad-heading h1 {
+    font-family: "Berlingske Sans Extracondensed", "Impact", sans-serif;
+    text-transform: uppercase;
+    font-size: clamp(37.5px, (7vw + 1rem), 76px);
+    letter-spacing: 1.6px;
+    margin: 1rem 0 0 0; /* Adjust margin if necessary */
+    color: #73000a;
+    font-weight: none;
+}
+#grad-second {
+    position: relative; /* Changed from absolute to relative */
+    margin: 0; /* Reset any margin */
+    padding: 20px; /* Add padding if necessary */
+    text-align: left; /* Center the heading text */
+    background-color: #ffffff; /* Ensure background color is applied */
+    line-height: 1.8em;
+}
+
+#grad-second h1 {
+    font-size: min((1rem + 1vw), 21px);
+    font-weight: 700;
+    margin: 1rem 0 2rem 0;
+    color: #000000;
+}
+#grad-section{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+#grad-section p{
+    font-size: 1em;
+    font-family: "Berlingske Sans", "Arial", sans-serif;
+    font-weight: 500;
+    background: #fff;
+    color: #222;
+    padding-left: 10px;
+    padding-right: 10px;
+    line-height: 1.8em;
+
+}
+
+#red-chem {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    background-color: #73000a;
+    padding:10px;
+    line-height: 1.8em;
+}
+#red-chem img{
+    width: 95%; /* Make the image fill its container */
+    margin-top: 20px; /* Maintain aspect ratio */
+    display: block; /* Ensure no extra space below the image */
+}
+#redpart{
+    color: #ffffff;
+    text-align:left;
+    margin-left:50px;
+    margin-top: 100px;
+    font-size: large;
+}
+#redpart button{
+    background-color: #000000;
+    border: 2px solid white;
+    font-size: large;
+    color: #ffffff;
+    height: 60px;
+    margin-top: 5%;
+}
+#ed-invest{
+    display: block;
+    text-align: center;
+    background-color:#ececec;
+
+}
+#ed-invest button{
+    background-color: #73000a;
+    color: #ffffff;
+    height: 60px;
+    length: 100px;
+    font-size: large;
+    margin-bottom: 20px;
+}
+#ed-invest p{
+    line-height: 1.8em;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+#ed-heading {
+    position: relative; /* Changed from absolute to relative */
+    margin: 0; /* Reset any margin */
+    padding: 20px; /* Add padding if necessary */
+    margin-left: 10%;
+    margin-right: 10%;
+}
+#ed-heading h1 {
+    font-size: 56px;
+    letter-spacing: 1.6px;
+    margin: 1rem 0 0 0; /* Adjust margin if necessary */
+    color: #73000a;
+    font-weight: none;
+}
+
+#paying{
+    padding:15px;
+}
+#paying h1{
+    
+    margin-top: 100px;
+    font-size: 56px;
+    letter-spacing: 1.6px;
+    color: #73000a;
+    font-weight: none;
+    font-family: 'Berlingske Serif', 'Georgia', serif;
+    text-align: center;
+}
+#paying p{
+    text-align: center;
+    line-height: 1.8em;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+#pic-row{
+    padding: 15px;
+}
+#pic-row img{
+    width:100%;
+
+}
+#pic-row h1{
+    color: #73000a;
+}
+#pic-row section{
+    margin-right: 10px;
+    margin-left: 10px;
+}
+#black h1{
+    font: larger;
+}
+#black {
+    background-color: #000000;
+    color: #ffffff;
+    padding: 10px;
+    display: block; /* Use flexbox for layout */
+    align-items: center; /* Vertically center items */
+    justify-content: space-between; /* Distribute space between items */
+}
+
+#black p{
+    line-height: 1.8em;
+}
+#black button{
+    background-color: #73000a;
+    color: #ffffff;
+    height: 60px;
+    width: 150px;
+    border: 3px solid white;
+    font-weight: 800;
+    font-size: large;
+
+}
+#black img{
+    margin-left: 5%;
+    margin-right: 5%;
+    padding-top: 0;
+}
+#next{
+    margin-left:20px;
+
+}
+
+#red-bottom{
+    background-color: #73000a;
+    color: #ffffff;
+    padding-left: 20px;
+}
+#red-bottom img{
+    height: 200px;
+    width:250px;
+
+}
+#red-bottom ul{
+    list-style: none;
+    padding: 10px;
+}
+#red-bottom li{
+    padding:10px;
+}
+hr{
+    color: #ffffff;
+    width:auto;
+}
+#bottom{
+    display: block;
+}
+.bottom-column{
+    display: flex;
+}
+.one{
+    flex: 1;
+}
+.two{
+    flex: 2;
+}
+.three{
+    flex:3;
+}
+
+@media only screen and (min-width: 960px) {
+    .columns {
+        display:flex;
+    }
+    .one{
+        flex: 1;
+    }
+    .seven{
+        flex:7;
+    }
+    
+    
+    #main-nav {
+        height: 150px;
+    }
+
+    #main-nav header {
+        display: block;
+    }
+
+    #main-logo {
+        height: 60px; /* Example adjustment for larger screens */
+    }
+
+    /* nav menu */
+    #nav-menu {
+        display: flex; /* Align items horizontally */
+        justify-content: space-evenly; /* Spread out the items evenly */
+        margin-top: 150px; /* Adjust based on the height of the main-nav */
+    }
+
+    /* Graduate heading */
+#grad-heading {
+    
+    background-color: #73000a; /* Ensure background color is applied */
+}
+
+#grad-heading h1 {
+    color: #ffffff;
+}
+
+
+/* red chem */
+#red-chem{
+    padding: 0;
+    display:flex;
+}
+#red-chem img{
+    width: 100%; /* Make the image fill its container */
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Ensure no extra space below the image */
+    margin-top: 0; /* Maintain aspect ratio */
+
+}
+#black {
+    display: flex;
+}
+#bottom{
+    display: flex;
+}
+footer {
+    background-color: #000000;
+    border-top: 1px solid #ffffff;
+    color: #ffffff;
+    padding: 10px; /* Add some padding for spacing */
+    display: flex; /* Use flexbox for layout */
+    justify-content: center; /* Center the content horizontally */
+    align-items: center; /* Center the content vertically */
+}
+footer ul {
+    list-style: none;
+    display: flex; /* Arrange list items in a row */
+
+}
+footer li{
+    margin: 10px;
+}
+footer li::after{
+    content: '|'; /* Separator character */
+    color: #ffffff;
+    margin-left: 10px; /* Space between the item and the separator */
+
+}
+
+}
