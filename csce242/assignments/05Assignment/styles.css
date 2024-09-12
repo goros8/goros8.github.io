@@ -1,0 +1,53 @@
+
+div{
+    padding:10px;
+    text-align: center;
+}
+#counter{
+    background-color: aquamarine;
+    height:500px;
+    width: 300px;
+    margin: 10px;
+}
+#counter p{
+    margin-top: 50px;
+    font-size: 75px;
+}
+#random{
+    background-color: navy;
+    margin: 10px;
+    height:500px;
+    width: 300px;
+}
+#random h1{
+    color: aliceblue;
+}
+#slider-container{
+    margin: 10px;
+
+    position: relative;
+    background-color: salmon;
+}
+#square{
+    width: 200px;
+    height: 200px;
+    background-color: red;
+    position: relative;
+    margin-top: 20px;
+    margin:auto;
+}
+
+
+
+@media only screen and (min-width: 600px){
+    body{
+        margin:auto;
+        text-align: center;
+    }
+    .columns{
+        display:flex;
+    }
+    .one{
+        flex:1;
+    }
+}
