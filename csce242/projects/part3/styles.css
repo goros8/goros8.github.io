@@ -1,0 +1,78 @@
+
+body h1{
+    text-align: center;
+    font-size: 48px;
+}
+
+/* Ensure the navigation bar spans the full width */
+nav {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+nav ul {
+    list-style: none; /* Remove bullet points */
+    display: flex; /* Flexbox for even spacing */
+    justify-content: space-around; /* Space out items evenly */
+    padding: 20px 0; /* Add some padding for spacing */
+    margin: 0; /* Reset margin */
+    width: 100%; /* Make sure ul spans the full width */
+}
+
+nav ul li {
+    margin: 0; /* Remove margin from list items */
+    border: 2px black solid; /* Adds a black border around each item */
+    background-color: beige; /* Beige background for the list items */
+    padding: 10px 20px; /* Adds padding inside the list items */
+    text-align: center;
+    height: 100%;
+}
+
+nav ul li a {
+    text-decoration: none; /* Remove underline from links */
+    color: darkblue; /* Sets the text color */
+    font-size: 26px; /* Adjust the font size */
+    display: block; /* Ensure the link fills the entire list item */
+}
+
+nav ul li a:hover {
+    color: white; /* Changes text color on hover */
+    background-color: darkblue; /* Changes background on hover */
+}
+#slideshow-container{
+    display: block;
+    margin: 0 auto;
+    align-items: center;
+    width: 70%;
+    position: relative;
+
+}
+#sidewalks {
+    position: relative; /* Allows the text to be positioned inside this container */
+    width: 100%; /* Make the container take the full width */
+    height: 200px; /* Set a height for the container */
+    margin-top: 100px;
+}
+
+#sidewalks img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%; /* Make the image take up the entire container */
+    height: 100%; /* Make sure the image covers the full container */
+    opacity: 0.5; /* Make the image semi-transparent */
+}
+
+#sidewalks p {
+    position: absolute;
+    top: 50%; /* Position the text halfway down the container */
+    left: 15px; /* Position the text halfway across the container */
+    color: white; /* Ensure the text is visible */
+    font-size: 36px; /* Adjust font size */
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background for text */
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-align: center;
+}
