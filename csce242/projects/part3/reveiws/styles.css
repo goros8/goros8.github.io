@@ -1,88 +1,81 @@
-body{
+body {
     margin: 0;
     padding: 0;
 }
-body h1{
+body h1 {
     text-align: center;
     font-size: 48px;
 }
-
-/* Ensure the navigation bar spans the full width */
 nav {
     width: 100%;
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
-
 nav ul {
-    list-style: none; /* Remove bullet points */
-    display: inline-block; /* Flexbox for even spacing */
-    justify-content: space-around; /* Space out items evenly */
-    padding: 20px 0; /* Add some padding for spacing */
-    margin: 0; /* Reset margin */
-    width: 100%; /* Make sure ul spans the full width */
+    list-style: none;
+    display: inline-block;
+    justify-content: space-around;
+    padding: 20px 0;
+    margin: 0;
+    width: 100%;
 }
-
 nav ul li {
-    margin: 0; /* Remove margin from list items */
-    border: 2px black solid; /* Adds a black border around each item */
+    margin: 0;
+    border: 2px black solid;
     width: auto;
-    background-color: beige; /* Beige background for the list items */
+    background-color: beige;
     text-align: center;
     height: 100%;
 }
-
 nav ul li a {
-    text-decoration: none; /* Remove underline from links */
-    color: darkblue; /* Sets the text color */
-    font-size: 26px; /* Adjust the font size */
-    display: block; /* Ensure the link fills the entire list item */
+    text-decoration: none;
+    color: darkblue;
+    font-size: 26px;
+    display: block;
     margin: 15px;
 }
-
-
 nav ul li a:hover {
-    color: white; /* Changes text color on hover */
-    background-color: darkblue; /* Changes background on hover */
+    color: white;
+    background-color: darkblue;
 }
-.comment{
-    width:90%;
-    margin:10px;
+.comment {
+    width: 90%;
+    margin: 10px;
     margin-right: 0;
     background-color: lightgray;
-    color:black;
+    color: black;
     border-radius: 15px;
-    padding:10px;
+    padding: 10px;
 }
-img{
+img {
     height: 20px;
-    width:50px;
-    margin:5px;
+    width: 50px;
+    margin: 5px;
 }
-#reviews,h2{
+#reviews, h2 {
     margin: 0 5%;
 }
-#write{
+#write {
     display: flex;
     align-items: center;
     justify-content: center;
 }
-#response{
+#response {
     margin-right: 30px;
     background-color: lightgray;
-    padding:10px;
+    padding: 10px;
     text-align: center;
 }
-#response input{
-    height:200px;
+#response input {
+    height: 200px;
     width: 200px;
 }
-#response h1{
+#response h1 {
     font-weight: bold;
 }
-button{
-    margin:5px;
+button {
+    margin: 5px;
     width: 150px;
     height: 30px;
 }
@@ -93,15 +86,13 @@ button{
     nav ul li {
         flex: 1;
     }
-    .columns{
+    .columns {
         display: flex;
     }
-    .seven{
-        flex:7;
+    .seven {
+        flex: 7;
     }
-    .one{
-        flex:2;
+    .one {
+        flex: 2;
     }
-
 }
-
