@@ -1,0 +1,107 @@
+    /* Structure */
+:root{
+    --ball-color:white;
+    --funds:0%;
+}
+    body {
+        background-color: azure;
+    }
+    
+    #main-header {
+        padding: 10px 10px 0;
+        margin: 0 auto;
+        background-color: bisque;
+    }
+    
+    #main-content {
+        padding: 10px;
+        margin: 0 auto;
+        background-color: honeydew;
+    }
+    
+    #main-footer {
+        padding: 10px;
+        margin: auto;
+        background-color: bisque;
+    }
+    #ball{
+        height: 100px;
+        width: 100px;
+        border-radius: 100%;
+        background-color: var(--ball-color);
+        border: 1px solid seagreen;
+        position: relative;
+    }
+    /* Main Navigation */
+    #toggle-nav div{
+        width: 25px;
+        height:2px;
+        background-color: black;
+        margin: 6px 0;
+        display: block;
+    }
+    
+
+
+    #main-nav ul {
+        padding-left: 0px;
+        margin: 0;
+    }
+    
+    #main-nav li {
+        list-style-type: none;
+        padding: 5px;
+    }
+    
+    #main-nav a {
+        text-decoration: none;
+        color: black;
+        padding: 5px;
+    }
+    
+    #main-nav a:hover {
+        border-bottom: 1px solid black;
+    }
+    
+    /* Typography */
+    
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    
+    h1 {
+        text-align: center;
+    }
+    /* visibility */
+.hidden{
+    display: none;
+}
+.hidden-small{
+    display: none;
+}
+.error{
+    color:red;
+}
+#goal{
+    height: 200px;
+    width: 100px;
+    border:3px solid black;
+    /* background: linear-gradient(45%, red 15%, orange 30%, yellow 50%, lime 75%, green 100%); */
+    background: linear-gradient(0deg, red 0% var(--funds), white var(--funds) 100%);
+}
+    /* Larger Resolutions */
+    
+    @media only screen and (min-width: 600px) {
+        #main-nav li {
+        flex: 1;
+        }
+        .columns {
+        display: flex;
+        }
+        #toggle-nav{
+            display: none;
+        }
+        .hidden-small{
+            display:flex;
+        }
+    }

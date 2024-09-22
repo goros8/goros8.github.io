@@ -1,0 +1,85 @@
+:root {
+    --red-value: red;
+}
+
+.rotate {
+    transform: rotate(180deg);
+    transition: transform 0.3s ease;
+
+}
+
+.hidden {
+    display: none;
+}
+
+nav ul li {
+    list-style-type: none;
+    padding: 10px;
+    text-align: left;
+}
+nav{
+    text-align: left;
+}
+nav a {
+    text-decoration: none;
+    color: black;
+}
+#displayed-image{
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    display: none;
+}
+#image-selector{
+    background-color: aqua;
+    border: 2px solid black;
+    padding:10px;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+}
+#toggle-container {
+    display: inline-block;
+    cursor: pointer;
+    padding-left: 40px;
+
+}
+
+#toggle-arrow {
+    display: block;
+    transform-origin: center;
+}
+
+body {
+    text-align: center;
+    background-color: antiquewhite;
+}
+
+#color-slider {
+    background-color: rgb(var(--red-value), 0, 0);
+    border: 2px solid black;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#color-slider h1,
+p {
+    color: rgb(28, 180, 35);
+}
+
+@media only screen and (min-width: 600px) {
+    nav ul {
+        display: flex;
+        justify-content: center;
+    }
+
+    #option-one::after {
+        content: " |";
+        margin-left: 10px;
+    }
+
+    #toggle-container {
+        display: none; /* Hide toggle arrow on larger screens */
+    }
+}
