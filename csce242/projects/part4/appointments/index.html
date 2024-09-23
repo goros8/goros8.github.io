@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Appointments</title>
+        <link rel="stylesheet" href="styles.css">
+
+    </head>
+    <body>
+        <h1>Young Bro's Pressure Washing</h1>
+        <nav>
+            <div id="toggle-nav">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <ul id="nav-items">
+                <li><a href="../home/index.html">Home</a></li>
+                <li><a href="../appointments/index.html">Appointments</a></li>
+                <li><a href="../about/index.html">About Us</a></li>
+                <li><a href="../reveiws/index.html">Reviews</a></li>
+                <li><a href="../gallery/index.html">Gallery</a></li>
+            </ul>
+        </nav>
+        <h2>Schedule an Appointment</h2>
+        <div id="main-div" class="columns">
+            <div class="one">
+                <div id="name">
+                    <h6>Your Name</h6>
+                    <input type="text" placeholder="Enter your name">
+                </div>
+                <div id="Address">
+                    <h6>Address</h6>
+                    <input type="text" placeholder="Address">
+                </div>
+                <div id="time">
+                    <h6>Preferred Time of Day</h6>
+                    <div id="time-buttons" class="columns">
+                        <div class="one">
+                            <button>Morning</button>
+                        </div>
+                        <div class="one">
+                            <button>Afternoon</button>
+                        </div>
+                        <div class="one">
+                            <button>Evening</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="one">
+                <div id="email">
+                    <h6>Email</h6>
+                    <input type="email" placeholder="Email">
+                </div>
+                <div id="date">
+                    <h6>Preferred Date</h6>
+                    <input type="date" placeholder="xx/xx/xxxx">
+                </div>
+                <div id="stories">
+                    <h6>Number of Stories</h6>
+                    <input type="number" placeholder="#">
+                </div>
+            </div>
+            <div class="one">
+                <div id="phone">
+                    <h6>Phone Number</h6>
+                    <input type="tel" placeholder="123-456-7890">
+                </div>
+                <div id="service-type">
+                    <h6>Service Type</h6>
+                    <select id="service-dropdown">
+                        <option value="" disabled selected>Select a service</option>
+                        <option value="pressure-washing">Sidewalk</option>
+                        <option value="window-cleaning">Patio</option>
+                        <option value="gutter-cleaning">House</option>
+                        <option value="deck-cleaning">Fences</option>
+                        <option value="driveway-cleaning">Driveway Cleaning</option>
+                    </select>
+                </div>
+                <div id="payment-method">
+                    <h6>Payment Method</h6>
+                    <div class="radio-option">
+                        <input type="radio" id="credit-card" name="payment-method" value="credit-card" required aria-required="true">
+                        <label for="credit-card">Credit Card</label>
+                    </div>
+                    <div class="radio-option">
+                        <input type="radio" id="debit-card" name="payment-method" value="debit-card">
+                        <label for="debit-card">Debit Card</label>
+                    </div>
+                    <div class="radio-option">
+                        <input type="radio" id="paypal" name="payment-method" value="paypal">
+                        <label for="paypal">PayPal/Venmo</label>
+                    </div>
+                    <div class="radio-option">
+                        <input type="radio" id="cash" name="payment-method" value="cash">
+                        <label for="cash">Cash</label>
+                    </div>
+                </div>
+
+
+            </div>
+
+        </div>
+        <footer>
+            <button>Book It!</button>
+        </footer>
+        <script src="../script.js"></script>
+
+    </body>
+</html>

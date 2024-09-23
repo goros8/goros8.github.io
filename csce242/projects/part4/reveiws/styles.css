@@ -1,0 +1,113 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #7891EB;
+
+}
+body h1 {
+    text-align: center;
+    font-size: 48px;
+}
+nav {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.hidden{
+    display: none;
+}
+#toggle-nav div{
+    width: 25px;
+    height:2px;
+    background-color: black;
+    margin: 6px 0;
+    display: block;
+}
+nav ul {
+    list-style: none;
+    display: inline-block;
+    justify-content: space-around;
+    padding: 20px 0;
+    margin: 0;
+    width: 100%;
+}
+nav ul li {
+    margin: 0;
+    border: 2px black solid;
+    width: auto;
+    background-color: beige;
+    text-align: center;
+    height: 100%;
+}
+nav ul li a {
+    text-decoration: none;
+    color: darkblue;
+    font-size: 26px;
+    display: block;
+    margin: 15px;
+}
+nav ul li a:hover {
+    color: white;
+    background-color: darkblue;
+}
+.comment {
+    width: 90%;
+    margin: 10px;
+    margin-right: 0;
+    background-color: lightgray;
+    color: black;
+    border-radius: 15px;
+    padding: 10px;
+}
+img {
+    height: 20px;
+    width: 50px;
+    margin: 5px;
+}
+#reviews, h2 {
+    margin: 0 5%;
+}
+#write {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#response {
+    margin-right: 30px;
+    background-color: lightgray;
+    padding: 10px;
+    text-align: center;
+}
+#response input {
+    height: 200px;
+    width: 200px;
+}
+#response h1 {
+    font-weight: bold;
+}
+button {
+    margin: 5px;
+    width: 150px;
+    height: 30px;
+}
+@media only screen and (min-width: 600px) {
+    nav ul {
+        display: flex;
+    }
+    nav ul li {
+        flex: 1;
+    }
+    .columns {
+        display: flex;
+    }
+    .seven {
+        flex: 7;
+    }
+    .one {
+        flex: 2;
+    }
+    #toggle-nav div{
+        display: none;
+    }
+}

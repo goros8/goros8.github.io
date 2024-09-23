@@ -1,0 +1,108 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #7891EB;
+}
+body h1 {
+    text-align: center;
+    font-size: 48px;
+}
+.hidden{
+    display: none;
+}
+nav {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+nav ul {
+    list-style: none;
+    display: inline-block;
+    justify-content: space-around;
+    padding: 20px 0;
+    margin: 0;
+    width: 100%;
+}
+nav ul li {
+    margin: 0;
+    border: 2px black solid;
+    background-color: beige;
+    text-align: center;
+    height: 100%;
+}
+nav ul li a {
+    text-decoration: none;
+    color: darkblue;
+    font-size: 26px;
+    display: block;
+    margin: 15px;
+}
+nav ul li a:hover {
+    color: white;
+    background-color: darkblue;
+}
+#toggle-nav div{
+    width: 25px;
+    height:2px;
+    background-color: black;
+    margin: 6px 0;
+    display: block;
+}
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+footer button {
+    height: 75px;
+    width: 200px;
+    color: aliceblue;
+    background-color: blue;
+    text-align: center;
+    font-size: 26px;
+    border-radius: 15px;
+}
+#main-div {
+    padding: 10px;
+    margin-left: 10%;
+    background-color: lightgrey;
+    margin-right: 10%;
+    overflow: auto;
+}
+
+h6 {
+    font-size: 20px;
+}
+input {
+    height: 30px;
+    border-radius: 10px;
+}
+select {
+    height: 30px;
+}
+#payment-method h6 {
+    margin-bottom: 10px;
+}
+@media only screen and (min-width: 600px) {
+    .columns {
+        display: flex;
+    }
+    .one {
+        flex: 1;
+    }
+
+    h2 {
+        margin-left: 10%;
+    }
+    nav ul {
+        display: flex;
+    }
+    nav ul li {
+        flex: 1;
+    }
+    #toggle-nav div{
+        display: none;
+    }
+}
