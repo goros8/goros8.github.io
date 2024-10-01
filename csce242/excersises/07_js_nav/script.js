@@ -1,3 +1,6 @@
+
+
+
 // when the hamburger is clicked toggle between showing and hiding the nav items
 const burger = document.getElementById("toggle-nav");
 burger.onclick = () => {

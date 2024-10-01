@@ -1,0 +1,35 @@
+body{
+    background-color: beige;
+    text-align: center;
+}
+#main-div{
+    width: 90%;
+    margin: auto;
+    background-color: aquamarine;
+    display: block;
+    border: 2px solid navy;
+
+}
+
+.columns {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.image-item {
+    width: 25%;
+    margin: 40px;
+    text-align: center;
+}
+
+.image-item img {
+    max-width: 100%;
+    height: auto;
+}
+#header, footer{
+    border: 2px solid navy;
+}
+#header{
+    height: 100px;
+}

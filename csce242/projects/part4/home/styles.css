@@ -32,22 +32,21 @@ nav ul {
     margin: 0;
     width: 100%;
 }
-nav ul li {
-    margin: 0;
-    border: 2px black solid;
-    width: auto;
-    background-color: beige;
-    text-align: center;
-    height: 100%;
-}
-nav ul li a {
+
+nav ul a {
     text-decoration: none;
     color: darkblue;
     font-size: 26px;
     display: block;
-    margin: 15px;
+    margin: 0;
+    border: 2px black solid;
+    width: 100%;
+    background-color: beige;
+    text-align: center;
+    height: 150%;
+    padding:15px;
 }
-nav ul li a:hover {
+nav ul a:hover {
     color: white;
     background-color: darkblue;
 }
@@ -61,67 +60,61 @@ nav ul li a:hover {
 }
 #slideshow-container img {
     width: 100%;
-    height: 400px;
+    height: 100%;
 }
-#sidewalks {
+
+/* left banners */
+
+.left {
     display: flex;
     align-items: center;
+    justify-content: center;
     position: relative;
     width: 100%;
-    height: 500px;
+    height: 300px;
     overflow: hidden;
 }
-#sidewalks img {
-    position: absolute;
-    top: 0;
-    left: 0;
+.left img {
     width: 100%;
-    height: 200%;
+    height: 100%;
 }
-#ribbon-sidewalks {
-    position: absolute;
-    left: 0;
+.left div {
+    height:100%;
     background-color: rgb(70, 188, 228);
     padding: 10px;
-    width: 30%;
-    min-width: 200px;
 }
-#sidewalks p {
-    position: relative;
-    top: auto;
-    bottom: auto;
-    left: 15px;
+.left p {
+    align-items: center;
+    justify-content: center;
     color: white;
     font-size: 36px;
     padding: 10px 20px;
     text-align: center;
 }
-#fences {
+.right {
     display: flex;
     align-items: center;
-    position: relative;
     width: 100%;
-    height: 500px;
+    height: 300px;
     overflow: hidden;
 
 }
-#fences img {
-    position: absolute;
-    top: 0;
-    left: 0;
+.three{
+    flex:3;
+}
+.seven{
+    flex:7;
+}
+.right img {
     width: 100%;
-    height: 200%;
+    height: 100%;
 }
-#ribbon-fences {
-    position: absolute;
-    right: 0;
-    background-color: rgb(5, 103, 136);
+.right div {
+    background-color: rgb(39, 171, 242);
     padding: 10px;
-    width: 30%;
-    min-width: 200px;
+    height:100%;
 }
-#fences p {
-    position: relative;
+.right p {
     top: auto;
     bottom: auto;
     left: 15px;
@@ -130,7 +123,10 @@ nav ul li a:hover {
     padding: 10px 20px;
     text-align: center;
 }
-#sidewalks:hover, #fences:hover {
+.left:hover {
+    box-shadow: 0 12px 18px rgba(0, 0, 0, 0.9);
+}
+.right:hover{
     box-shadow: 0 12px 18px rgba(0, 0, 0, 0.9);
 }
 footer {
