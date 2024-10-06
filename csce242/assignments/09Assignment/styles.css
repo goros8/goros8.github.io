@@ -1,0 +1,104 @@
+#bird-list{
+    display: block;
+}
+body{
+    background-color: beige;
+    color:brown;
+    text-align: center;
+}
+section{
+    background-color: rgb(98, 167, 227);
+    color:white;
+    flex:1;
+}
+img{
+    height: 300px;
+    width: 250px;
+    margin:20px;
+}
+.hidden{
+    display: none;
+}
+
+
+
+
+
+/* Modal Styles */
+.w3-modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4); 
+}
+
+.w3-modal-content {
+    background-color: #fff;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    height: 400px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: relative;
+    overflow: auto;
+}
+.w3-container{
+    width: 100%;
+}
+.w3-button {
+    font-size: 24px;
+    color: black;
+    cursor: pointer;
+}
+
+.w3-display-topright {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 10px;
+    font-size: 30px;
+    color: black;
+    cursor: pointer;
+    z-index: 1000;
+}
+
+.w3-display-topright:hover {
+    background-color: lightgrey;
+}
+
+.bird-info {
+    flex: 1;
+    padding-right: 20px;
+}
+
+.bird-image-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bird-image {
+    width: auto;
+    height: auto;
+    object-fit: cover;
+}
+.bird-expanded-section{
+    display:flex;
+}
+
+
+
+@media only screen and (min-width: 600px){
+    #bird-list{
+        display:flex;
+    }
+}
