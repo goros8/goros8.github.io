@@ -8,14 +8,12 @@ body h1 {
     text-align: center;
     font-size: 48px;
 }
+/* nav */
 nav {
     width: 100%;
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-}
-.hidden{
-    display: none;
 }
 #toggle-nav div{
     width: 25px;
@@ -32,25 +30,27 @@ nav ul {
     margin: 0;
     width: 100%;
 }
-nav ul li {
-    margin: 0;
-    border: 2px black solid;
-    width: auto;
-    background-color: beige;
-    text-align: center;
-    height: 100%;
-}
-nav ul li a {
+
+nav ul a {
     text-decoration: none;
     color: darkblue;
     font-size: 26px;
     display: block;
-    margin: 15px;
+    margin: 0;
+    border: 2px black solid;
+    width: 100%;
+    background-color: beige;
+    text-align: center;
+    height: 150%;
+    padding:15px;
 }
-nav ul li a:hover {
+nav ul a:hover {
     color: white;
     background-color: darkblue;
 }
+/* end nav */
+
+
 .comment {
     width: 90%;
     margin: 10px;
@@ -70,7 +70,6 @@ img {
 }
 #write {
     display: flex;
-    align-items: center;
     justify-content: center;
 }
 #response {
@@ -78,6 +77,7 @@ img {
     background-color: lightgray;
     padding: 10px;
     text-align: center;
+    height: 400px;
 }
 #response input {
     height: 200px;

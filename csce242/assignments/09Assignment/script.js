@@ -8,14 +8,12 @@ class Bird {
         this.pic = pic;
     }
 
-    // Helper method to create an image element
     createImage() {
         const imgElement = document.createElement("img");
         imgElement.src = this.pic;
         return imgElement;
     }
 
-    // Method to return a section with just the title and image
     get section() {
         const section = document.createElement("section");
         section.classList.add("bird-section");
@@ -24,7 +22,6 @@ class Bird {
         titleElement.innerHTML = this.title;
         section.appendChild(titleElement);
 
-        // Append the image
         section.appendChild(this.createImage());
 
         return section;
@@ -32,9 +29,8 @@ class Bird {
 
     get expandedSection() {
         const section = document.createElement("div");
-        section.classList.add("bird-expanded-section"); // Flex container for both columns
+        section.classList.add("bird-expanded-section");
     
-        // Left column (bird details)
         const section1 = document.createElement("div");
         section1.classList.add("bird-info");
     
@@ -69,7 +65,6 @@ class Bird {
     }
 }
 
-// Create an array of bird objects
 const birds = [
     new Bird("Sparrow", "Passeridae", "Brown", 2, "Urban Areas", "images/sparrow.jpg"),
     new Bird("Peacock", "Pavo Cristatus", "Multicolored", 4, "Forests", "images/peacock.jpg"),
@@ -77,30 +72,23 @@ const birds = [
     new Bird("Penguin", "Spheniscidae", "Black & White", 3, "Polar Regions", "images/penguin.jpg")
 ];
 
-// Function to add all birds to the DOM
 function displayBirds() {
     const birdList = document.getElementById("bird-list");
 
     birds.forEach((bird) => {
-        // Create a bird section (title + image)
         const birdSection = bird.section;
 
-        // Add a click event listener to show expanded information in the modal
         birdSection.addEventListener("click", () => {
             const modal = document.getElementById("bird-modal");
             const modalContent = document.getElementById("modal-content");
 
-            // Clear existing modal content
             modalContent.innerHTML = "";
 
-            // Append the expanded section of the clicked bird
             modalContent.appendChild(bird.expandedSection);
 
-            // Show the modal
             modal.style.display = "flex";
         });
 
-        // Append the bird section to the bird list
         birdList.appendChild(birdSection);
     });
 }
