@@ -31,10 +31,22 @@ const getReviewSection = (review) => {
     h3.innerHTML = review.user;
     commentDiv.append(h3);
 
-    const img = document.createElement('img');
-    img.src = 'stars.jpg'; // You can adjust the source if needed
-    img.alt = `${review.stars} stars`;
-    commentDiv.append(img);
+    // Display the review date
+    const dateP = document.createElement('p');
+    dateP.classList.add('review-date');
+    dateP.innerHTML = `Date: ${review.date}`;
+    commentDiv.append(dateP);
+
+    // Create star rating display
+    const starsDiv = document.createElement('div');
+    starsDiv.classList.add('stars');
+    for (let i = 1; i <= 5; i++) {
+        const starImg = document.createElement('img');
+        starImg.src = (i <= review.stars) ? 'filled_star.png' : 'empty_star.png'; // Adjust the paths to your star images
+        starImg.alt = `${i} star${i > 1 ? 's' : ''}`;
+        starsDiv.append(starImg);
+    }
+    commentDiv.append(starsDiv);
 
     const p = document.createElement('p');
     p.innerHTML = review.review;
