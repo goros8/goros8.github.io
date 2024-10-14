@@ -1,3 +1,8 @@
+const burger = document.getElementById("toggle-nav");
+burger.onclick = () => {
+    document.getElementById("nav-items").classList.toggle("hidden");
+}
+
 const getReviews = async () => {
     const url = 'reviews.json'; // Update this if your JSON file is located elsewhere
 
@@ -12,10 +17,8 @@ const getReviews = async () => {
 const showReviews = async () => {
     const reviewsData = await getReviews();
 
-    // Get the reviews container
     const reviewsContainer = document.getElementById('reviews');
 
-    // Clear existing reviews
     reviewsContainer.innerHTML = '';
 
     if (reviewsData && reviewsData.reviews) {
@@ -49,7 +52,7 @@ const getReviewSection = (review) => {
         const starDiv = document.createElement('div');
         starDiv.classList.add('star');
         if (i > review.stars) {
-            starDiv.style.backgroundColor = 'lightgray'; // Optional: gray out stars for lower ratings
+            starDiv.style.backgroundColor = 'lightgray';
         }
         starsDiv.append(starDiv);
     }

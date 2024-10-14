@@ -24,6 +24,8 @@ nav {
     background-color: black;
     margin: 6px 0;
     display: block;
+    margin-left:5px;
+    
 }
 nav ul {
     list-style: none;
@@ -71,6 +73,8 @@ nav ul a:hover {
     height: 500px;
     width: 100%;
     border-radius: 15px;
+    object-fit: contain;  /* scales image without stretching */
+
 }
 /* left banners */
 

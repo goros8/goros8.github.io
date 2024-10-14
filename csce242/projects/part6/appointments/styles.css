@@ -23,6 +23,8 @@ nav {
     background-color: black;
     margin: 6px 0;
     display: block;
+    margin-left:5px;
+
 }
 nav ul {
     list-style: none;

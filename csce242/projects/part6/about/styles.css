@@ -31,6 +31,8 @@ nav {
     background-color: black;
     margin: 6px 0;
     display: block;
+    margin-left:5px;
+
 }
 nav ul {
     list-style: none;
@@ -94,7 +96,11 @@ select {
 
 #mission{
     text-align: center;
-    color: beige;
+    color: grey;
+    background-color: beige;
+    border: 2px solid black;
+    margin-left: 20%;
+    margin-right:20%;
 }
 img{
     display: block;
