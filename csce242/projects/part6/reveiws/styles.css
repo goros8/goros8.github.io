@@ -115,15 +115,34 @@ button:hover {
     color: #555;
 }
 /* //////////////////// */
-.stars {
-    display: flex;
-    margin: 5px 0;
+.comment {
+    width: 90%;
+    margin: 10px auto; /* Center comments */
+    background-color: lightgray;
+    color: black;
+    border-radius: 15px;
+    padding: 10px;
+    display: flex; /* Ensure it can contain flex items */
+    flex-direction: column; /* Stack items vertically */
 }
 
-.stars img {
-    height: 20px;
-    width: 20px;
-    margin-right: 3px;
+.stars {
+    display: flex; /* Use flexbox for alignment */
+    margin: 5px 0; /* Space around stars */
+}
+
+.star {
+    width: 50px;
+    height: 50px;
+    background-color: gold;
+    position: relative; /* Changed from absolute to relative for positioning */
+    clip-path: polygon(
+        50% 0%, 61% 35%, 98% 35%, 
+        68% 57%, 79% 91%, 50% 70%, 
+        21% 91%, 32% 57%, 2% 35%, 
+        39% 35%
+    );
+    margin-right: 5px; /* Space between stars */
 }
 
 @media only screen and (min-width: 600px) {

@@ -5,7 +5,7 @@ const getReviews = async () => {
         const response = await fetch(url);
         return response.json();
     } catch (error) {
-        console.log(error);
+        console.error("Error fetching reviews:", error);
     }
 };
 
@@ -18,9 +18,14 @@ const showReviews = async () => {
     // Clear existing reviews
     reviewsContainer.innerHTML = '';
 
-    reviewsData.reviews.forEach((review) => {
-        reviewsContainer.append(getReviewSection(review));
-    });
+    if (reviewsData && reviewsData.reviews) {
+        reviewsData.reviews.forEach((review) => {
+            reviewsContainer.append(getReviewSection(review));
+        });
+    } else {
+        console.error("No reviews found");
+        reviewsContainer.innerHTML = '<p>No reviews available.</p>';
+    }
 };
 
 const getReviewSection = (review) => {
@@ -41,10 +46,12 @@ const getReviewSection = (review) => {
     const starsDiv = document.createElement('div');
     starsDiv.classList.add('stars');
     for (let i = 1; i <= 5; i++) {
-        const starImg = document.createElement('img');
-        starImg.src = (i <= review.stars) ? 'filled_star.png' : 'empty_star.png'; // Adjust the paths to your star images
-        starImg.alt = `${i} star${i > 1 ? 's' : ''}`;
-        starsDiv.append(starImg);
+        const starDiv = document.createElement('div');
+        starDiv.classList.add('star');
+        if (i > review.stars) {
+            starDiv.style.backgroundColor = 'lightgray'; // Optional: gray out stars for lower ratings
+        }
+        starsDiv.append(starDiv);
     }
     commentDiv.append(starsDiv);
 
@@ -56,4 +63,4 @@ const getReviewSection = (review) => {
 };
 
 // Show all of the reviews when the page loads
-showReviews();
+document.addEventListener("DOMContentLoaded", showReviews);
