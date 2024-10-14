@@ -1,0 +1,133 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #7891EB;
+}
+
+body h1 {
+    text-align: center;
+    font-size: 48px;
+}
+
+/* nav */
+nav {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#toggle-nav div {
+    width: 25px;
+    height: 2px;
+    background-color: black;
+    margin: 6px 0;
+    display: block;
+}
+
+nav ul {
+    list-style: none;
+    display: inline-block;
+    justify-content: space-around;
+    padding: 20px 0;
+    margin: 0;
+    width: 100%;
+}
+
+nav ul a {
+    text-decoration: none;
+    color: darkblue;
+    font-size: 26px;
+    display: block;
+    margin: 0;
+    border: 2px solid black;
+    width: 100%;
+    background-color: beige;
+    text-align: center;
+    height: 150%;
+    padding: 15px;
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition */
+}
+
+nav ul a:hover {
+    color: white;
+    background-color: darkblue;
+}
+
+/* end nav */
+
+.comment {
+    width: 90%;
+    margin: 10px auto; /* Center comments */
+    background-color: lightgray;
+    color: black;
+    border-radius: 15px;
+    padding: 10px;
+}
+
+img {
+    height: 20px;
+    width: 50px;
+    margin: 5px;
+}
+
+#reviews, h2 {
+    margin: 0 5%;
+}
+
+#write {
+    display: flex;
+    justify-content: center;
+}
+
+#response {
+    margin-right: 30px;
+    background-color: lightgray;
+    padding: 10px;
+    text-align: center;
+    height: 400px;
+}
+
+#response input {
+    height: 100px; /* Reduced height for better UX */
+    width: 200px;
+    padding: 5px; /* Added padding */
+}
+
+#response h1 {
+    font-weight: bold;
+}
+
+button {
+    margin: 5px;
+    width: 150px;
+    height: 30px;
+    cursor: pointer; /* Change cursor on hover */
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition */
+}
+
+button:hover {
+    background-color: darkblue;
+    color: white;
+}
+
+@media only screen and (min-width: 600px) {
+    nav ul {
+        display: flex;
+    }
+    nav ul li {
+        flex: 1;
+    }
+    .columns {
+        display: flex;
+    }
+    .seven {
+        flex: 7;
+    }
+    .one {
+        flex: 2;
+    }
+    #toggle-nav div {
+        display: none;
+    }
+}
