@@ -18,17 +18,19 @@ const displayLiquorInfoInModal = async (liquorType) => {
         const liquorInfoDiv = document.getElementById("liquor-info");
         liquorInfoDiv.innerHTML = `
             <h3>${liquorInfo.strIngredient}</h3>
-            <p><strong>Description:</strong> ${liquorInfo.strDescription || "No description available."}</p>
-            <p><strong>Type:</strong> ${liquorInfo.strType || "Unknown"}</p>
             <p><strong>Alcohol Content:</strong> ${liquorInfo.strAlcohol === "Yes" ? `${liquorInfo.strABV}% ABV` : "Non-alcoholic"}</p>
-        `;
+            <p><strong>Description:</strong> ${liquorInfo.strDescription || "No description available."}</p>
+
+            `;
 
         const modal = document.getElementById("liquorModal");
+        console.log("Showing modal for:", liquorType);
         modal.style.display = "block";
     } else {
         console.error(`No data available for ${liquorType}`);
     }
 };
+
 
 const setupModal = () => {
     const modal = document.getElementById("liquorModal");
@@ -44,10 +46,10 @@ const setupModal = () => {
         }
     };
 
-    const liquorCategories = document.querySelectorAll('.liquors');
+    const liquorCategories = document.querySelectorAll('.liquor-category');
     
     liquorCategories.forEach(category => {
-        category.onclick = () =>{
+        category.onclick = function() {
             const liquorType = this.id;
             displayLiquorInfoInModal(liquorType);
         };
